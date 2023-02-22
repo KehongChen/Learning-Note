@@ -38,7 +38,7 @@ conn.close()
 ### 2.1 Basic Command 
 #### 2.1.1 Create a Table
 ```sql
-create table table_name(column_name, type,column_name, type)default charset=utf8;
+create table table_name(column_name type,column_name type)default charset=utf8;
 ```
 
 *Examples*  
@@ -125,6 +125,10 @@ datatime -- YYYY-MM-DD HH:MM:SS
 timestamp -- YYYY-MM-DD HH:MM:SS, storage as the UTC timestamp
 date -- YYYY-MM-DD
 time -- HH:MM:SS
+```
+
+```sql
+create table data_log(TIMESTAMP decimal,STAIN_X decimal,STRAIN_Y decimal,STRAIN_Z decimal,STRAIN_P1 decimal,STRAIN_P2 decimal,ANGLE decimal,TAMPERATURE decimal,HUMIDITY decimal,PRESSURE decimal,ACCELERATION_X decimal,ACCELERATION_Y decimal,ACCELERATION_Z decimal,STRESS_P1 decimal,STRESS_P2 decimal,STRESS_ANGLE decimal)default charset=utf8;
 ```
 
 
